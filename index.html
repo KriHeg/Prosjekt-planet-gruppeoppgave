@@ -22,42 +22,40 @@
 <!-- Husk tydelige commits -->
 
 <html lang="en">
-  <!-- =========================
+    <!-- =========================
      SIDEOPPSETT / HOVEDSTRUKTUR
      ========================= -->
-  <!-- Hele nettsiden bygges med semantisk HTML -->
-  <!-- Header med navbar -->
-  <!-- Minst 2 seksjoner -->
-  <!-- Smooth scroll mellom seksjonene -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- =========================
+    <!-- Hele nettsiden bygges med semantisk HTML -->
+    <!-- Header med navbar -->
+    <!-- Minst 2 seksjoner -->
+    <!-- Smooth scroll mellom seksjonene -->
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Oswald:wght@200..700&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jorda</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- =========================
      HEADER
      ========================= -->
-    <!-- Logo / tittel på siden -->
-    <!-- Navbar med lenker til seksjonene -->
-    <!-- Lenker skal scrolle til sections med id -->
-    <header>
-      <div class="header-text">
-        <h1>Jorda</h1>
-        <p>
-          Earth, our home planet is the third planet from the Sun, and the fifth
-          largest planet.
-        </p>
-      </div>
-
-      <div class="header-image">
-        <img
-          src="https://media.istockphoto.com/id/2220413003/photo/the-beauty-of-earth-from-space-with-stunning-visuals-of-our-planets-landscapes-and-features.webp?a=1&b=1&s=612x612&w=0&k=20&c=V3KjZukYVXW_Npin0iRP1gbYKYgM6W36IJwVYaFSMB4="
-          alt="Bilde av Jorda"
-        />
-      </div>
-    </header>
+        <!-- Logo / tittel på siden -->
+        <!-- Navbar med lenker til seksjonene -->
+        <!-- Lenker skal scrolle til sections med id -->
+        <header>
+            <div class="header-text">
+                <h1 class="big-shoulders-123">Jorda</h1>
+                <p>
+                    Earth, our home planet is the third planet from the Sun, and
+                    the fifth largest planet.
+                </p>
+            </div>
 
     <nav>
       <a href="#hero">Home</a>
@@ -65,15 +63,73 @@
     </nav>
     <main>
       <!-- =========================
+            <div class="header-image">
+                <img
+                    src="https://media.istockphoto.com/id/2220413003/photo/the-beauty-of-earth-from-space-with-stunning-visuals-of-our-planets-landscapes-and-features.webp?a=1&b=1&s=612x612&w=0&k=20&c=V3KjZukYVXW_Npin0iRP1gbYKYgM6W36IJwVYaFSMB4="
+                    alt="Bilde av Jorda"
+                />
+            </div>
+        </header>
+        <nav>
+            <a class="big-shoulders-123" href="">Home</a>
+            <a class="big-shoulders-123" href="">Facts</a>
+        </nav>
+        <main>
+            <!-- =========================
+  <!-- Hele nettsiden bygges med semantisk HTML -->
+            <!-- Header med navbar -->
+            <!-- Minst 2 seksjoner -->
+            <!-- Smooth scroll mellom seksjonene -->
+            <head>
+                <meta charset="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <title>Document</title>
+                <link rel="stylesheet" href="./style.css" />
+            </head>
+            <body>
+                <main>
+                    <!-- =========================
      SEKSJON 1: HERO / INTRO
      ========================= -->
-      <!-- Kort introduksjon til siden -->
-      <!-- Hovedoverskrift -->
-      <!-- Tekstinnhold -->
-      <!-- Bilde eller grafisk element -->
-      <!-- Fokus på layout med flexbox -->
+                    <!-- Kort introduksjon til siden -->
+                    <!-- Hovedoverskrift -->
+                    <!-- Tekstinnhold -->
+                    <!-- Bilde eller grafisk element -->
+                    <!-- Fokus på layout med flexbox -->
 
-      <!-- =========================
+                    <section id="hero">
+                        <div class="hero">
+                            <p class="hero big-shoulders-123">
+                                Jorden er planeten vi kaller hjem, og det eneste
+                                stedet vi kjenner til hvor liv finnes. Med store
+                                hav, mektige fjell, frodige skoger og en
+                                atmosfære som beskytter alt levende, er jorden
+                                et unikt og fascinerende sted. Den er i konstant
+                                bevegelse og forandring, formet av naturkrefter,
+                                klima og livet som finnes her.
+                            </p>
+                            <script
+                                type="module"
+                                src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+                            ></script>
+
+                            <model-viewer
+                                src="assets/scene-v1.glb"
+                                alt="3D Earth"
+                                environment-image="neutral"
+                                auto-rotate
+                                camera-controls
+                                style="width: 40vw; height: 40vh"
+                            >
+                            </model-viewer>
+                        </div>
+                    </section>
+
+                    <!-- ========================= 
+                     
      SEKSJON 2: FAKTA / INFOSIDE
      ========================= -->
       <!-- Undertittel -->
@@ -83,6 +139,13 @@
      
     </main>
   </body>
+                    <!-- Undertittel -->
+                    <!-- Faktaelementer eller informasjonsbokser -->
+                    <!-- Kan lages som flex-rad eller kolonner -->
+                    <!-- Visuell balanse og god spacing -->
+                    <section id="facts"></section>
+                </main>
+            </body>
             <!-- Undertittel -->
             <!-- Faktaelementer eller informasjonsbokser -->
             <!-- Kan lages som flex-rad eller kolonner -->
@@ -138,11 +201,11 @@
         </main>
     </body>
 
-  <footer>
-    <!-- =========================
+    <footer>
+        <!-- =========================
      FOOTER
      ========================= -->
-    <!-- Enkel footer nederst på siden -->
-    <!-- Navn på gruppemedlemmer eller prosjektinfo -->
-  </footer>
+        <!-- Enkel footer nederst på siden -->
+        <!-- Navn på gruppemedlemmer eller prosjektinfo -->
+    </footer>
 </html>
