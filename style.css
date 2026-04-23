@@ -12,9 +12,9 @@ Sjekk at flexbox brukes riktig */ /* Rydd opp i kommentarer og kode */
 /* Bakgrunn */
 /* Standard spacing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* =========================
    CSS: HEADER / NAVBAR
@@ -25,27 +25,58 @@ Sjekk at flexbox brukes riktig */ /* Rydd opp i kommentarer og kode */
 /* Styling av lenker */
 /* Smooth scroll kobles til seksjonene */
 
-header {
-    background-color: aquamarine;
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-header img {
-    display: block;
-    width: 100%;
-    height: 100%;
+header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  min-height: 120px;
+}
+
+.header-text {
+  max-width: 60%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 5px 0 0 0;
+}
+
+.header-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #333;
+  padding: 10px;
+  position: sticky;
+  top: 0;
 }
+
 nav a {
-    padding: 0 20px;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 /* =========================
    CSS: HERO / INTRO
