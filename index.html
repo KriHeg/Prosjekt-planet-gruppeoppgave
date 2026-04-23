@@ -57,6 +57,12 @@
                 </p>
             </div>
 
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#facts">Facts</a>
+    </nav>
+    <main>
+      <!-- =========================
             <div class="header-image">
                 <img
                     src="https://media.istockphoto.com/id/2220413003/photo/the-beauty-of-earth-from-space-with-stunning-visuals-of-our-planets-landscapes-and-features.webp?a=1&b=1&s=612x612&w=0&k=20&c=V3KjZukYVXW_Npin0iRP1gbYKYgM6W36IJwVYaFSMB4="
@@ -126,6 +132,13 @@
                      
      SEKSJON 2: FAKTA / INFOSIDE
      ========================= -->
+      <!-- Undertittel -->
+      <!-- Faktaelementer eller informasjonsbokser -->
+      <!-- Kan lages som flex-rad eller kolonner -->
+      <!-- Visuell balanse og god spacing -->
+     
+    </main>
+  </body>
                     <!-- Undertittel -->
                     <!-- Faktaelementer eller informasjonsbokser -->
                     <!-- Kan lages som flex-rad eller kolonner -->
@@ -137,6 +150,54 @@
             <!-- Faktaelementer eller informasjonsbokser -->
             <!-- Kan lages som flex-rad eller kolonner -->
             <!-- Visuell balanse og god spacing -->
+            <section id="hero">
+                <div class="hero">
+                    <p class="hero">
+                        Jorden er planeten vi kaller hjem, og det eneste stedet
+                        vi kjenner til hvor liv finnes. Med store hav, mektige
+                        fjell, frodige skoger og en atmosfære som beskytter alt
+                        levende, er jorden et unikt og fascinerende sted. Den er
+                        i konstant bevegelse og forandring, formet av
+                        naturkrefter, klima og livet som finnes her.
+                    </p>
+                    <script
+                        type="module"
+                        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+                    ></script>
+
+                    <model-viewer
+                        src="assets/scene-v1.glb"
+                        alt="3D Earth"
+                        environment-image="neutral"
+                        auto-rotate
+                        camera-controls
+                        style="width: 30vw; height: 30vh"
+                    >
+                    </model-viewer>
+                </div>
+            </section>
+            <section id="facts">
+                <h2>Facts about earth</h2>
+                <div class="container">
+                    <article class="facts-card">
+                        <h3>Namesake</h3>
+                        <p>The name Earth is about 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.”</p>
+                    </article>
+                    <article class="facts-card">
+                        <h3>Potential for life</h3>
+                        <p>Earth has a very hospitable temperature and mix of chemicals that have made life abundant here. Most notably, Earth is unique in that most of our planet is covered in liquid water, since the temperature allows liquid water to exist for extended periods of time. Earth's vast oceans provided a convenient place for life to begin about 3.8 billion years ago.</p>
+                    </article>
+                    <article class="facts-card">
+                        <h3>Atmosphere</h3>
+                        <p>Near the surface, Earth has an atmosphere that consists of 78% nitrogen, 21% oxygen, and 1% other gases such as argon, carbon dioxide, and neon. The atmosphere affects Earth's long-term climate and short-term local weather and shields us from much of the harmful radiation coming from the Sun. It also protects us from meteoroids, most of which burn up in the atmosphere, seen as meteors in the night sky, before they can strike the surface as meteorites.</p>
+                    </article>
+                    <article class="facts-card">
+                        <h3>Formation</h3>
+                        <p>When the solar system settled into its current layout about 4.5 billion years ago, Earth formed when gravity pulled swirling gas and dust in to become the third planet from the Sun. Like its fellow terrestrial planets, Earth has a central core, a rocky mantle, and a solid crust.</p>
+                    </article>
+                </div>
+
+            </section>
         </main>
     </body>
 

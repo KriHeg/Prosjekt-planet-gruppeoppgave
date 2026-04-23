@@ -16,6 +16,9 @@ Sjekk at flexbox brukes riktig */ /* Rydd opp i kommentarer og kode */
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .big-shoulders-123 {
     font-family: "Big Shoulders", sans-serif;
@@ -95,22 +98,22 @@ nav a:hover {
 /* Balanse mellom innhold */
 
 section {
-    display: flex;
-    justify-content: center;
-    margin: 5%;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
 }
 
 .hero {
-    height: 40%;
-    width: 80%;
+  height: 40%;
+  width: 80%;
 
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 p {
-    margin: 2%;
+  margin: 2%;
 }
 
 /* =========================
@@ -121,6 +124,44 @@ p {
 /* Flexbox for oppsett */
 /* Avstand mellom boksene */
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.facts-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.facts-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.facts-card h3 {
+  justify-self: center;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.facts-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+#facts {
+  display: block;
+}
+#facts h2 {
+  width: 100%;
+  text-align: center;
+  color: #555;
+}
 /* =========================
    CSS: BILDEGALLERI
    ========================= */
