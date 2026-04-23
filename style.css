@@ -26,3 +26,66 @@ nav a {
   text-decoration: none;
 }
 
+/* ========================= TODO / SJEKKLISTE ========================= */ /*
+Legg inn riktige bilder */ /* Sjekk fargevalg */ /* Sjekk fonter */ /* Sjekk
+spacing */ /* Sjekk at navbar scroller riktig */ /* Sjekk semantisk HTML */ /*
+Sjekk at flexbox brukes riktig */ /* Rydd opp i kommentarer og kode */
+
+/* =========================
+   CSS: GENERELT
+   ========================= */
+/* Reset / grunnstil */
+/* Font-family */
+/* Farger */
+/* Bakgrunn */
+/* Standard spacing */
+
+/* =========================
+   CSS: HEADER / NAVBAR
+   ========================= */
+/* Flexbox for header */
+/* Plassering av logo */
+/* Plassering av navbar */
+/* Styling av lenker */
+/* Smooth scroll kobles til seksjonene */
+
+/* =========================
+   CSS: HERO / INTRO
+   ========================= */
+/* Flex-container */
+/* Tekstdel */
+/* Bildedel */
+/* Margin / padding */
+/* Balanse mellom innhold */
+
+/* =========================
+   CSS: FAKTASEKSJON
+   ========================= */
+/* Tittel */
+/* Faktabokser */
+/* Flexbox for oppsett */
+/* Avstand mellom boksene */
+
+/* =========================
+   CSS: BILDEGALLERI
+   ========================= */
+/* Galleri-container */
+/* Flex-wrap hvis nødvendig */
+/* Bilde-størrelser */
+/* Avstand mellom bilder */
+
+/* =========================
+   CSS: FOOTER
+   ========================= */
+/* Footer layout */
+/* Tekstplassering */
+/* Margin på toppen */
+
+/* =========================
+   CSS: FELLES KOMPONENTER
+   ========================= */
+/* Knapper */
+/* Bokser */
+/* Overskrifter */
+/* Avsnitt */
+/* Gjenbrukbare regler */
