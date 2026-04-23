@@ -56,6 +56,25 @@ nav a {
 /* Margin / padding */
 /* Balanse mellom innhold */
 
+section {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.hero {
+    height: 40%;
+    width: 80%;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    margin: 2%;
+}
+
 /* =========================
    CSS: FAKTASEKSJON
    ========================= */
