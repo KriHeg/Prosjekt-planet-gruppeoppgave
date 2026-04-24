@@ -11,19 +11,26 @@ Sjekk at flexbox brukes riktig */ /* Rydd opp i kommentarer og kode */
 /* Farger */
 /* Bakgrunn */
 /* Standard spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
+
+:root {
+    --ocean-dark: #056aa2;
+    --ocean: #0888cf;
+    --sky: #5ca9dc;
+    --sand: #e8d2af;
+    --green-dark: #6b9569;
+    --green: #91a171;
+    --green-light: #9aae92;
+    --cloud: #f6f7f4;
+    --space: #0b1f33;
 }
 
-.big-shoulders-123 {
-    font-family: "Big Shoulders", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 /* =========================
@@ -36,57 +43,66 @@ html {
 /* Smooth scroll kobles til seksjonene */
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--sand);
 }
 
 header {
-  background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 40px;
-  min-height: 120px;
+    background-color: var(--sky);
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    padding: 20px 40px;
+    min-height: 120px;
+    color: var(--space);
 }
 
 .header-text {
-  max-width: 60%;
-  text-align: center;
+    max-width: 60%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 13.5vw;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+    margin: 0;
+    font-size: 2rem;
 }
 
 header p {
-  margin: 5px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .header-image img {
-  width: 120px;
-  height: auto;
-  border-radius: 10px;
+    float: left;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background-color: #333;
-  padding: 10px;
-  position: sticky;
-  top: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: var(--ocean);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: var(--cloud);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 /* =========================
    CSS: HERO / INTRO
@@ -98,22 +114,22 @@ nav a:hover {
 /* Balanse mellom innhold */
 
 section {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
 }
 
 .hero {
-  height: 40%;
-  width: 80%;
+    height: 40%;
+    width: 80%;
 
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 p {
-  margin: 2%;
+    margin: 2%;
 }
 
 /* =========================
@@ -125,42 +141,47 @@ p {
 /* Avstand mellom boksene */
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .facts-card {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
+    background: var(--cloud);
+    padding: 25px;
+    border-radius: 12px;
 }
 
 .facts-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .facts-card h3 {
-  justify-self: center;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-  color: #2c3e50;
+    justify-self: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: var(--space);
 }
 
 .facts-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--space);
 }
 #facts {
-  display: block;
+    display: block;
 }
 #facts h2 {
-  width: 100%;
-  text-align: center;
-  color: #555;
+    width: auto;
+    text-align: center;
+    color: var(--space);
+    margin: 3vh 3vw;
+}
+
+model-viewer {
+    z-index: 0;
 }
 /* =========================
    CSS: BILDEGALLERI
