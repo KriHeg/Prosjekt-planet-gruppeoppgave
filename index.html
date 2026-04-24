@@ -50,6 +50,12 @@
         <!-- Lenker skal scrolle til sections med id -->
         <main>
             <header>
+                <div class="header-image">
+                    <img
+                        src="https://media.istockphoto.com/id/2220413003/photo/the-beauty-of-earth-from-space-with-stunning-visuals-of-our-planets-landscapes-and-features.webp?a=1&b=1&s=612x612&w=0&k=20&c=V3KjZukYVXW_Npin0iRP1gbYKYgM6W36IJwVYaFSMB4="
+                        alt="Bilde av Jorda"
+                    />
+                </div>
                 <div class="header-text">
                     <h1 class="big-shoulders-123">Jorda</h1>
                     <p>
@@ -57,17 +63,11 @@
                         and the fifth largest planet.
                     </p>
                 </div>
-
-                <div class="header-image">
-                    <img
-                        src="https://media.istockphoto.com/id/2220413003/photo/the-beauty-of-earth-from-space-with-stunning-visuals-of-our-planets-landscapes-and-features.webp?a=1&b=1&s=612x612&w=0&k=20&c=V3KjZukYVXW_Npin0iRP1gbYKYgM6W36IJwVYaFSMB4="
-                        alt="Bilde av Jorda"
-                    />
-                </div>
             </header>
             <nav>
-                <a class="big-shoulders-123" href="">Home</a>
-                <a class="big-shoulders-123" href="">Facts</a>
+                <a href="#">Home</a>
+                <a href="#hero">Earth</a>
+                <a href="#facts">Facts</a>
             </nav>
 
             <!-- =========================
@@ -82,12 +82,12 @@
             <section id="hero">
                 <div class="hero">
                     <p class="hero big-shoulders-123">
-                        Jorden er planeten vi kaller hjem, og det eneste stedet
-                        vi kjenner til hvor liv finnes. Med store hav, mektige
-                        fjell, frodige skoger og en atmosfære som beskytter alt
-                        levende, er jorden et unikt og fascinerende sted. Den er
-                        i konstant bevegelse og forandring, formet av
-                        naturkrefter, klima og livet som finnes her.
+                        Earth is the planet we call home, and the only place we
+                        know of where life exists. With vast oceans, mighty
+                        mountains, lush forests, and an atmosphere that protects
+                        all living things, Earth is a unique and fascinating
+                        world. It is constantly moving and changing, shaped by
+                        natural forces, climate, and the life that exists here.
                     </p>
                     <script
                         type="module"
@@ -101,6 +101,8 @@
                         auto-rotate
                         camera-controls
                         style="width: 40vw; height: 40vh"
+                        touch-action="pan-y"
+                        disable-zoom
                     >
                     </model-viewer>
                 </div>
@@ -115,7 +117,7 @@
             <!-- Kan lages som flex-rad eller kolonner -->
             <!-- Visuell balanse og god spacing -->
 
-            <section id="facts">
+            <section id="facts" class="container">
                 <h2>Facts about earth</h2>
                 <div class="container">
                     <article class="facts-card">
